@@ -1,0 +1,273 @@
+ do
+            {
+
+                string game = Console.ReadLine();
+
+                switch (game)
+                {
+                    case "OutFall 4":
+
+                       double currentBalanceSpent = 39.99;
+                        if (currentBalanceSpent > currentBalance)
+                        {
+                            Console.WriteLine("Too Expensive");
+                            continue;
+                        }
+                        else
+                        {
+                            currentBalanceTemp += currentBalanceSpent;
+                            Console.WriteLine("Bought OutFall 4");
+                        }
+
+                        if (currentBalanceSpent == currentBalance)
+                        {
+                            Console.WriteLine("Out of money!");
+                            return;
+                        }
+                            
+                        break;
+
+                    case "CS: OG":
+
+                        currentBalanceSpent = 15.99;
+                        if (currentBalanceSpent > currentBalance)
+                        {
+                            Console.WriteLine("Too Expensive");
+                            continue;
+                        }
+                        else
+                        {
+                            currentBalanceTemp += currentBalanceSpent;
+                            Console.WriteLine("Bought CS: OG");
+                        }
+
+                        if (currentBalanceSpent == currentBalance)
+                        {
+                            Console.WriteLine("Out of money!");
+                            return;
+                        }
+                        
+                        break;
+
+                    case "Zplinter Zell":
+
+                        currentBalanceSpent = 19.99;
+                        if (currentBalanceSpent > currentBalance)
+                        {
+                            Console.WriteLine("Too Expensive");
+                           continue;
+
+                        }
+                        else
+                        {
+                            currentBalanceTemp += currentBalanceSpent;
+                            Console.WriteLine("Bought Zplinter Zell");
+                        }
+
+                        if (currentBalanceSpent == currentBalance)
+                        {
+                            Console.WriteLine("Out of money!");
+                            return;
+                        }
+                       
+                        break;
+
+                    case "Honored 2":
+
+                        currentBalanceSpent = 59.99;
+                        if (currentBalanceSpent > currentBalance)
+                        {
+                            Console.WriteLine("Too Expensive");
+                            continue;
+                        }
+                        else
+                        {
+                            currentBalanceTemp += currentBalanceSpent;
+                            Console.WriteLine("Bought Honored 2");
+                        }
+
+                        if (currentBalanceSpent == currentBalance)
+                        {
+                            Console.WriteLine("Out of money!");
+                            return;
+                        }
+                        
+                        break;
+
+                    case "RoverWatch":
+                        currentBalanceSpent = 29.99;
+
+                        if (currentBalanceSpent > currentBalance)
+                        {
+                            Console.WriteLine("Too Expensive");
+                            
+                            continue;
+                        }
+                        else
+                        {
+                            currentBalanceTemp += currentBalanceSpent;
+                            Console.WriteLine("Bought RoverWatch");
+                        }
+
+                        if (currentBalanceSpent == currentBalance)
+                        {
+                            Console.WriteLine("Out of money!");
+                            return;
+                        }
+                       
+                        break;
+
+                    case "RoverWatch Origins Edition":
+                        currentBalanceSpent = 39.99;
+
+                        if (currentBalanceSpent > currentBalance)
+                        {
+                            Console.WriteLine("Too Expensive");
+                            continue;
+                        }
+                        else
+                        {
+                            currentBalanceTemp += currentBalanceSpent;
+                            Console.WriteLine("Bought RoverWatch Origins Edition");
+                        }
+
+                        if (currentBalanceSpent <= currentBalance)
+                        {
+                            Console.WriteLine("Out of money!");
+                            return;
+                        }
+                        
+                        break;
+
+                    case "Game Time":
+                        balance = currentBalance - currentBalanceTemp;
+                        
+
+                       
+                        Console.WriteLine($"Total spent: ${currentBalanceTemp:F2}. Remaining: ${balance:F2}");
+                        return;
+
+                    default:
+                        
+                        Console.WriteLine("Not Found");
+                        //game = Console.ReadLine();
+                        continue;
+                        
+
+                }
+
+               
+
+
+            } while (currentBalance-currentBalanceTemp>=0);
+
+
+            Console.WriteLine($"Total spent: ${currentBalanceTemp:F2}. Remaining: ${balance:F2}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+..................................
+
+
+double currentBalance = double.Parse(Console.ReadLine());
+            double currentBalanceTemp = currentBalance;
+            
+
+            
+            string game = Console.ReadLine();
+
+            while (game!="Game Time")
+            {
+                double currentBalanceSpent = 0.0;
+                var gameTitle = string.Empty; 
+
+
+                switch (game)
+                {
+                    case "OutFall 4":
+
+                       currentBalanceSpent = 39.99;
+                        gameTitle = "OutFall 4";
+                        break;
+
+                    case "CS: OG":
+
+                        currentBalanceSpent = 15.99;
+                        break;
+
+                    case "Zplinter Zell":
+
+                        currentBalanceSpent = 19.99;
+                        gameTitle = "Zplinter Zell";
+                        break;
+
+                    case "Honored 2":
+
+                        currentBalanceSpent = 59.99;
+                        gameTitle = "Honored 2";
+                        break;
+
+                    case "RoverWatch":
+                        currentBalanceSpent = 29.99;
+                        gameTitle = "RoverWatch";
+                        break;
+
+
+                    case "RoverWatch Origins Edition":
+                        currentBalanceSpent = 39.99;
+                        gameTitle = "RoverWatch Origins Edition";
+                        break;
+
+                        
+
+                    default:
+                        Console.WriteLine("Not Found");
+                        game = Console.ReadLine();
+                        continue;
+                }
+
+
+                
+
+                if (currentBalanceSpent > currentBalance)
+                {
+                    Console.WriteLine("Too Expensive");
+                  
+                }
+                else
+                {
+                    currentBalance -= currentBalanceSpent;
+                    Console.WriteLine($"Bought {gameTitle}");
+                }
+
+                if (currentBalance==0)
+                {
+                    Console.WriteLine("Out of money!");
+                    return;
+                }
+
+                game = Console.ReadLine();
+
+                
+            }
+
+            double allBalanceSpent = currentBalanceTemp - currentBalance;
+            Console.WriteLine($"Total spent: ${allBalanceSpent:F2}. Remaining: ${currentBalance:F2}");
+
+
