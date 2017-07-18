@@ -53,10 +53,8 @@ namespace _04.Winning_Ticket
                                 Console.WriteLine($"ticket \"{t}\" - {minLength}{maxLeftLongest[0]}");
                            
                                
-                            
                         }
-
-
+                        
                     }
                     else
                     {

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Softuni Coffee Orders", "..\01. Softuni Coffee Orders\01. Softuni Coffee Orders.csproj", "{1AA8FE9D-FAF3-4791-88FF-9350AEF135EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Command Interpreter", "..\02. Command Interpreter\02. Command Interpreter.csproj", "{9E73C0F2-1769-4016-955F-DEC9B42C076A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Rage Quit", "..\03. Rage Quit\03. Rage Quit.csproj", "{A13514A7-F4D7-4922-B4D5-A30F2600B65D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Files", "..\04. Files\04. Files.csproj", "{83627737-D71A-4F89-ADCF-5514491BF5CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AA8FE9D-FAF3-4791-88FF-9350AEF135EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA8FE9D-FAF3-4791-88FF-9350AEF135EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA8FE9D-FAF3-4791-88FF-9350AEF135EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA8FE9D-FAF3-4791-88FF-9350AEF135EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E73C0F2-1769-4016-955F-DEC9B42C076A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E73C0F2-1769-4016-955F-DEC9B42C076A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E73C0F2-1769-4016-955F-DEC9B42C076A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E73C0F2-1769-4016-955F-DEC9B42C076A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13514A7-F4D7-4922-B4D5-A30F2600B65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13514A7-F4D7-4922-B4D5-A30F2600B65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13514A7-F4D7-4922-B4D5-A30F2600B65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13514A7-F4D7-4922-B4D5-A30F2600B65D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83627737-D71A-4F89-ADCF-5514491BF5CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83627737-D71A-4F89-ADCF-5514491BF5CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83627737-D71A-4F89-ADCF-5514491BF5CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83627737-D71A-4F89-ADCF-5514491BF5CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
